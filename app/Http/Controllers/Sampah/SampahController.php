@@ -12,7 +12,12 @@ class SampahController extends Controller
     public function index()
     {
         $sampah = Sampah::latest()->get();
-        return SampahResource::collection($sampah);
+        $hasil = SampahResource::collection($sampah);
+        return response()->json([
+            'message' => 'Menampilkan data Sampah',
+            'status' => 200,
+            'data' => $hasil,
+        ],200);
     }
 
     public function store()

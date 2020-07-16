@@ -30,4 +30,13 @@ class SampahController extends Controller
             'sampah' => $sampah,
         ]);
     }
+
+    public function destroy(Sampah $sampah)
+    {
+        $sampah->delete();
+
+        return response()->json([
+            'message' => 'Sampah telah terhapus',
+        ], 200);
+    }
 }

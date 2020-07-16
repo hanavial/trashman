@@ -10,6 +10,11 @@ class KategoriSampahController extends Controller
 {
     public function index()
     {
-        return KategoriSampah::get();
+        $kategori = KategoriSampah::get();
+        return response()->json([
+            'message' => 'Menampilkan data kategori sampah',
+            'status' => 200,
+            'data' => $kategori,
+        ],200);
     }
 }

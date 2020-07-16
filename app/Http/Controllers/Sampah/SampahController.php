@@ -32,8 +32,9 @@ class SampahController extends Controller
 
         return response()->json([
             'message' => 'Sampah baru telah ditambahkan',
+            'status' => 200,
             'sampah' => $sampah,
-        ]);
+        ],200);
     }
 
     public function destroy(Sampah $sampah)

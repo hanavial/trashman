@@ -14,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::group(['namespace' => 'Sampah'], function () {
+
+    Route::group(['prefix' => 'sampah'], function () {
+        
+    });
+
+    Route::group(['prefix' => 'kategori'], function () {
+        Route::get('', 'KategoriSampahController@index');
+    });
 });

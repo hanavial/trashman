@@ -17,7 +17,6 @@ class SampahResource extends JsonResource
         //return parent::toArray($request);
         return [
             'id' => $this->id,
-            // 'kategori_id' => $this->kategori_id,
             'kategori_id' => $this->kategori_sampah->id,
             'kategori_nama' => $this->kategori_sampah->kategori_nama,
             'nama' => $this->nama,

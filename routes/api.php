@@ -21,7 +21,9 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'Sampah'], function () {
 
     Route::group(['prefix' => 'sampah'], function () {
-        
+        Route::get('', 'SampahController@index');
+        Route::post('input-sampah','SampahController@store');
+        Route::delete('{sampah:id}/delete', 'SampahController@destroy');
     });
 
     Route::group(['prefix' => 'kategori'], function () {

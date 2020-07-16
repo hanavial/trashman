@@ -14,7 +14,7 @@ class KategoriSampahController extends Controller
         return response()->json([
             'message' => 'Menampilkan data kategori sampah',
             'status' => 200,
-            'data' => $kategori,
+            
         ],200);
     }
 }

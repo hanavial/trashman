@@ -43,6 +43,7 @@ class SampahController extends Controller
 
         return response()->json([
             'message' => 'Sampah telah terhapus',
+            'status' => 200,
         ], 200);
     }
 }

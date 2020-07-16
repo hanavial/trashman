@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class SampahController extends Controller
 {
+    public function index()
+    {
+        $sampah = Sampah::latest()->get();
+        return SampahResource::collection($sampah);
+    }
+
     public function store()
     {
         $kategori = KategoriSampah::findOrFail(request('kategori_id'));

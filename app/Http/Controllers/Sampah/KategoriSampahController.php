@@ -8,5 +8,8 @@ use Illuminate\Http\Request;
 
 class KategoriSampahController extends Controller
 {
-    
+    public function index()
+    {
+        return KategoriSampah::get();
+    }
 }

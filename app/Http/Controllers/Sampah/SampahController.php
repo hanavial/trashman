@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Sampah;
 use App\Models\{Sampah, KategoriSampah};
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Resources\SampahResource;
 
 class SampahController extends Controller
 {

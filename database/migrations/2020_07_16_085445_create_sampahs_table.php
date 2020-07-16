@@ -15,6 +15,10 @@ class CreateSampahsTable extends Migration
     {
         Schema::create('sampah', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('kategori_id');
+            $table->string('nama');
+            $table->text('deskripsi');
+            $table->foreign('kategori_id')->references('id')->on('kategori_sampah')->onDelete('cascade');
             $table->timestamps();
         });
     }

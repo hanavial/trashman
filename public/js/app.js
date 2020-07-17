@@ -37881,10 +37881,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "button",
-        {
-          staticClass: "btn btn-primary d-flex align-item-center",
-          attrs: { type: "submit" }
-        },
+        { staticClass: "btn btn-block btn-primary", attrs: { type: "submit" } },
         [_vm._v("Simpan")]
       )
     ])
@@ -37920,16 +37917,16 @@ var render = function() {
           "div",
           { staticClass: "col-md-6" },
           [
-            _c("h1", [_vm._v("Home")]),
-            _vm._v(" "),
             _c(
               "router-link",
               {
-                staticClass: "nav-link",
+                staticClass: "btn btn-block btn-primary",
                 attrs: { exact: "", to: { name: "create" } }
               },
-              [_vm._v("Create")]
-            )
+              [_vm._v("Tambah")]
+            ),
+            _vm._v(" "),
+            _c("h1", [_vm._v("Home")])
           ],
           1
         )

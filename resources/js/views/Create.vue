@@ -20,7 +20,7 @@
                             <input type="text"  id="title" class="form-control" placeholder="Nama Sampah">
                             <!-- <div v-if="theErrors.title" class="mt-2 text-danger">{{ theErrors.title[0]}}</div> -->
                         </div>
-                        <button type="submit" class="btn btn-primary d-flex align-item-center">Simpan</button>
+                        <button type="submit" class="btn btn-block btn-primary">Simpan</button>
                     </form>
                     <router-link class="nav-link" exact :to="{name: 'home'}">Home</router-link>
                 </div>

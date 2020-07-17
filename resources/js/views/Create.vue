@@ -5,10 +5,10 @@
         </nav>
         <div class="container py-4">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <form action="">
                         <div class="form-group">
-                            <label for="kategori">Kategori Sampah</label>
+                            <label for="kategori"><p>Kategori Sampah</p></label>
                             <select id="subject" class="form-control">
                                 <option placeholder="Kategori Sampah">
                                     Kategori
@@ -16,11 +16,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="nama">Nama Sampah</label>
+                            <label for="nama"><p>Nama Sampah</p></label>
                             <input type="text"  id="title" class="form-control" placeholder="Nama Sampah">
                             <!-- <div v-if="theErrors.title" class="mt-2 text-danger">{{ theErrors.title[0]}}</div> -->
                         </div>
-                        <button type="submit" class="btn btn-block btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-block btn-primary shadow">Simpan</button>
                     </form>
                     <router-link class="nav-link" exact :to="{name: 'home'}">Home</router-link>
                 </div>
@@ -42,6 +42,9 @@ export default {
     .bg-primary{
         background-color: #0C325F !important;
     }
+    .btn{
+        border-radius: 7px;
+    }
     .btn-primary{
         background-color: #30AEE4;
         border: none;
@@ -49,5 +52,18 @@ export default {
     .btn-primary:hover{
         background-color: #23a6df;
         border: none;
+    }
+    .shadow{
+        box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;
+    }
+    input, select{
+        border-radius: 7px;
+    }
+    label{
+        margin-bottom: 1px;
+    }
+    label p{
+        margin-bottom: 0;
+        font-size: 13px;
     }
 </style>

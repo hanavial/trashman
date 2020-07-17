@@ -6494,7 +6494,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.navbar a[data-v-08197cdb]{\n    font-weight: 200;\n}\n.bg-primary[data-v-08197cdb]{\n    background-color: #0C325F !important;\n}\n.btn-primary[data-v-08197cdb]{\n    background-color: #30AEE4;\n    border: none;\n}\n", ""]);
+exports.push([module.i, "\n.navbar a[data-v-08197cdb]{\n    font-weight: 200;\n}\n.bg-primary[data-v-08197cdb]{\n    background-color: #0C325F !important;\n}\n.btn-primary[data-v-08197cdb]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-08197cdb]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n", ""]);
 
 // exports
 
@@ -6513,7 +6513,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container[data-v-63cd6604]{\n    background-color: #EEEEEE;\n}\n.navbar a[data-v-63cd6604]{\n    font-weight: 200;\n}\n.bg-primary[data-v-63cd6604]{\n    background-color: #0C325F !important;\n}\n.btn-primary[data-v-63cd6604]{\n    background-color: #30AEE4;\n    border: none;\n}\n/* #0C325F\n    #30AEE4\n    #EEEEEE\n */\n", ""]);
+exports.push([module.i, "\n.container[data-v-63cd6604]{\n    background-color: #EEEEEE;\n}\n.navbar a[data-v-63cd6604]{\n    font-weight: 200;\n}\n.bg-primary[data-v-63cd6604]{\n    background-color: #0C325F !important;\n}\n.btn-primary[data-v-63cd6604]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-63cd6604]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n/* #0C325F\n    #30AEE4\n    #EEEEEE\n */\n", ""]);
 
 // exports
 

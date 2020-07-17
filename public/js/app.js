@@ -2048,6 +2048,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -6494,7 +6504,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.navbar a[data-v-08197cdb]{\n    font-weight: 200;\n}\n.bg-primary[data-v-08197cdb]{\n    background-color: #0C325F !important;\n}\n.btn-primary[data-v-08197cdb]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-08197cdb]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n", ""]);
+exports.push([module.i, "\n.navbar a[data-v-08197cdb]{\n    font-weight: 200;\n}\n.bg-primary[data-v-08197cdb]{\n    background-color: #0C325F !important;\n}\n.btn[data-v-08197cdb]{\n    border-radius: 7px;\n}\n.btn-primary[data-v-08197cdb]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-08197cdb]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n.shadow[data-v-08197cdb]{\n    box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;\n}\ninput[data-v-08197cdb], select[data-v-08197cdb]{\n    border-radius: 7px;\n}\nlabel[data-v-08197cdb]{\n    margin-bottom: 1px;\n}\nlabel p[data-v-08197cdb]{\n    margin-bottom: 0;\n    font-size: 13px;\n}\n", ""]);
 
 // exports
 
@@ -6513,7 +6523,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container[data-v-63cd6604]{\n    background-color: #EEEEEE;\n}\n.navbar a[data-v-63cd6604]{\n    font-weight: 200;\n}\n.bg-primary[data-v-63cd6604]{\n    background-color: #0C325F !important;\n}\n.btn-primary[data-v-63cd6604]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-63cd6604]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n/* #0C325F\n    #30AEE4\n    #EEEEEE\n */\n", ""]);
+exports.push([module.i, "\n.container[data-v-63cd6604]{\n    background-color: #EEEEEE;\n}\n.navbar a[data-v-63cd6604]{\n    font-weight: 200;\n}\n.bg-primary[data-v-63cd6604]{\n    background-color: #0C325F !important;\n}\n.card-body[data-v-63cd6604]{\n    border: none;\n    border-radius: 100px;\n}\n.btn[data-v-63cd6604]{\n    border-radius: 7px;\n}\n.btn-primary[data-v-63cd6604]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-63cd6604]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n.shadow[data-v-63cd6604]{\n    box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;\n}\n/* #0C325F\n    #30AEE4\n    #EEEEEE\n */\n", ""]);
 
 // exports
 
@@ -38517,7 +38527,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-6" },
+          { staticClass: "col-md-12" },
           [
             _vm._m(1),
             _vm._v(" "),
@@ -38558,7 +38568,7 @@ var staticRenderFns = [
     return _c("form", { attrs: { action: "" } }, [
       _c("div", { staticClass: "form-group" }, [
         _c("label", { attrs: { for: "kategori" } }, [
-          _vm._v("Kategori Sampah")
+          _c("p", [_vm._v("Kategori Sampah")])
         ]),
         _vm._v(" "),
         _c(
@@ -38575,7 +38585,9 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "form-group" }, [
-        _c("label", { attrs: { for: "nama" } }, [_vm._v("Nama Sampah")]),
+        _c("label", { attrs: { for: "nama" } }, [
+          _c("p", [_vm._v("Nama Sampah")])
+        ]),
         _vm._v(" "),
         _c("input", {
           staticClass: "form-control",
@@ -38585,7 +38597,10 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-block btn-primary", attrs: { type: "submit" } },
+        {
+          staticClass: "btn btn-block btn-primary shadow",
+          attrs: { type: "submit" }
+        },
         [_vm._v("Simpan")]
       )
     ])
@@ -38615,16 +38630,16 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "container py-4" }, [
+    _c("div", { staticClass: "container py-3" }, [
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-md-6" },
+          { staticClass: "col-md-12" },
           [
             _c(
               "router-link",
               {
-                staticClass: "btn btn-block btn-primary py-2",
+                staticClass: "btn btn-block btn-primary py-2 mb-3 shadow",
                 attrs: { exact: "", to: { name: "create" } }
               },
               [_vm._v("Tambah")]
@@ -38632,7 +38647,11 @@ var render = function() {
             _vm._v(" "),
             _vm._m(1),
             _vm._v(" "),
-            _vm._m(2)
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4)
           ],
           1
         )
@@ -38670,6 +38689,26 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card mt-2" }, [
       _c("div", { staticClass: "card-body" }, [
         _c("p", [_vm._v("Plastik PET")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card mt-2" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("p", [_vm._v("Plastik Kresek")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card mt-2" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("p", [_vm._v("Baja Ringan")])
       ])
     ])
   }

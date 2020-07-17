@@ -52762,7 +52762,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_router__WEBPACK_IMPORTED_MODULE_3__);
 
 window.axios = axios__WEBPACK_IMPORTED_MODULE_0___default.a;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -52782,7 +52781,7 @@ vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('example-component', __webp
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
   el: '#app',
-  router: new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"](_router__WEBPACK_IMPORTED_MODULE_3___default.a)
+  router: new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"](_router__WEBPACK_IMPORTED_MODULE_3__["default"])
 });
 
 /***/ }),
@@ -52905,10 +52904,92 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************!*\
   !*** ./resources/js/router/index.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/Home */ "./resources/js/views/Home.vue");
+/* harmony import */ var _views_Create__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/Create */ "./resources/js/views/Create.vue");
 
 
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mode: 'history',
+  linkActiveClass: 'active',
+  routes: [{
+    path: '/',
+    name: 'home',
+    component: _views_Home__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }, {
+    path: '/new',
+    name: 'create',
+    component: _views_Create__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }]
+});
+
+/***/ }),
+
+/***/ "./resources/js/views/Create.vue":
+/*!***************************************!*\
+  !*** ./resources/js/views/Create.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/views/Create.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/views/Home.vue":
+/*!*************************************!*\
+  !*** ./resources/js/views/Home.vue ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/views/Home.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 

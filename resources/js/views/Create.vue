@@ -35,6 +35,19 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    .navbar a{
+        font-weight: 200;
+    }
+    .bg-primary{
+        background-color: #0C325F !important;
+    }
+    .btn-primary{
+        background-color: #30AEE4;
+        border: none;
+    }
+    .btn-primary:hover{
+        background-color: #23a6df;
+        border: none;
+    }
 </style>

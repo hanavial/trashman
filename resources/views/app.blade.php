@@ -9,8 +9,8 @@
 </head>
 <body>
     <main id="app">
-        <example-component></example-component>
-        {{-- <navigation></navigation> --}}
+        {{-- <example-component></example-component> --}}
+        <navigation></navigation>
 
         <div class="py-4">
             <router-view></router-view>

@@ -9,13 +9,7 @@
 </head>
 <body>
     <main id="app">
-        {{-- <example-component></example-component> --}}
-        <navigation></navigation>
-
-        <div class="py-4">
-            <router-view></router-view>
-        </div>
-
+        <router-view></router-view>
     </main>
     <script src="/js/app.js"></script>
 </body>

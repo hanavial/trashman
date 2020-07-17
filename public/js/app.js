@@ -1989,6 +1989,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2002,6 +2022,14 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -37778,29 +37806,90 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c("h2", [_vm._v("Create")]),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            {
-              staticClass: "nav-link",
-              attrs: { exact: "", to: { name: "home" } }
-            },
-            [_vm._v("Home")]
-          )
-        ],
-        1
-      )
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "container py-4" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              {
+                staticClass: "nav-link",
+                attrs: { exact: "", to: { name: "home" } }
+              },
+              [_vm._v("Home")]
+            )
+          ],
+          1
+        )
+      ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "nav",
+      { staticClass: "navbar navbar-expand-lg navbar-dark bg-primary" },
+      [
+        _c("a", { staticClass: "navbar-brand mx-auto" }, [
+          _vm._v("Input Sampah")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("form", { attrs: { action: "" } }, [
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "kategori" } }, [
+          _vm._v("Kategori Sampah")
+        ]),
+        _vm._v(" "),
+        _c(
+          "select",
+          { staticClass: "form-control", attrs: { id: "subject" } },
+          [
+            _c("option", { attrs: { placeholder: "Kategori Sampah" } }, [
+              _vm._v(
+                "\n                                Kategori\n                            "
+              )
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "nama" } }, [_vm._v("Nama Sampah")]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", id: "title", placeholder: "Nama Sampah" }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-primary d-flex align-item-center",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("Simpan")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -37822,25 +37911,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container" },
-    [
-      _c("h1", [_vm._v("Home")]),
-      _vm._v(" "),
-      _c(
-        "router-link",
-        {
-          staticClass: "nav-link",
-          attrs: { exact: "", to: { name: "create" } }
-        },
-        [_vm._v("Create")]
-      )
-    ],
-    1
-  )
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "container py-4" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("h1", [_vm._v("Home")]),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              {
+                staticClass: "nav-link",
+                attrs: { exact: "", to: { name: "create" } }
+              },
+              [_vm._v("Create")]
+            )
+          ],
+          1
+        )
+      ])
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "nav",
+      { staticClass: "navbar navbar-expand-lg navbar-dark bg-primary" },
+      [
+        _c("a", { staticClass: "navbar-brand mx-auto" }, [
+          _vm._v("Data Sampah")
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 

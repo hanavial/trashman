@@ -20,7 +20,6 @@ class SampahResource extends JsonResource
             'kategori_id' => $this->kategori_sampah->id,
             'kategori_nama' => $this->kategori_sampah->kategori_nama,
             'nama' => $this->nama,
-            'deskripsi' => $this->deskripsi,
             'ditambahkan' => $this->created_at->format('d F Y'),
         ];
     }

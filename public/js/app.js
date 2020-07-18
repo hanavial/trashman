@@ -6568,7 +6568,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container[data-v-63cd6604]{\n    background-color: #EEEEEE;\n}\n.py-3[data-v-63cd6604]{\n    padding-bottom: 200px !important;\n}\n.navbar a[data-v-63cd6604]{\n    font-weight: 200;\n}\n.bg-primary[data-v-63cd6604]{\n    background-color: #0C325F !important;\n}\n.card[data-v-63cd6604]{\n    border: none;\n    border-radius: 7px;\n    box-shadow: 0 0.9rem 1rem rgba(168, 168, 168, 0.15) !important\n}\n.card-body[data-v-63cd6604]{\n    padding: 0.7rem 0.9rem;\n}\n.btn[data-v-63cd6604]{\n    border-radius: 7px;\n}\n.btn-primary[data-v-63cd6604]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-63cd6604]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n.shadow[data-v-63cd6604]{\n    box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;\n}\n.name-title[data-v-63cd6604]{\n    margin-bottom: 0.2rem;\n    font-size: 14px;\n}\n.name-category[data-v-63cd6604]{\n    margin-bottom: 0;\n    color: #777777;\n}\n.nav-link[data-v-63cd6604]{\n    padding: 0;\n    margin-left: auto;\n}\n.row .about[data-v-63cd6604]{\n    margin: 2px 0;\n    font-size: 13px;\n}\n.delete[data-v-63cd6604]{\n    color: #ff1717;\n}\n/*\n#0C325F\n#30AEE4\n#EEEEEE\n */\n", ""]);
+exports.push([module.i, "\n.home[data-v-63cd6604]{\n    background-color: #EEEEEE;\n}\n.py-3[data-v-63cd6604]{\n    padding-bottom: 200px !important;\n}\n.navbar a[data-v-63cd6604]{\n    font-weight: 200;\n}\n.bg-primary[data-v-63cd6604]{\n    background-color: #0C325F !important;\n}\n.card[data-v-63cd6604]{\n    border: none;\n    border-radius: 7px;\n    box-shadow: 0 0.9rem 1rem rgba(168, 168, 168, 0.15) !important\n}\n.card-body[data-v-63cd6604]{\n    padding: 0.7rem 0.9rem;\n}\n.btn[data-v-63cd6604]{\n    border-radius: 7px;\n}\n.btn-primary[data-v-63cd6604]{\n    background-color: #30AEE4;\n    border: none;\n}\n.btn-primary[data-v-63cd6604]:hover{\n    background-color: #23a6df;\n    border: none;\n}\n.shadow[data-v-63cd6604]{\n    box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;\n}\n.name-title[data-v-63cd6604]{\n    margin-bottom: 0.2rem;\n    font-size: 14px;\n}\n.name-category[data-v-63cd6604]{\n    margin-bottom: 0;\n    color: #777777;\n}\n.nav-link[data-v-63cd6604]{\n    padding: 0;\n    margin-left: auto;\n}\n.row .about[data-v-63cd6604]{\n    margin: 2px 0;\n    font-size: 13px;\n}\n.delete[data-v-63cd6604]{\n    color: #ff1717;\n}\n/*\n#0C325F\n#30AEE4\n#EEEEEE\n */\n", ""]);
 
 // exports
 
@@ -39412,7 +39412,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "home" }, [
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "container py-3" }, [

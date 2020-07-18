@@ -6,23 +6,25 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="">
+                    <form action="#" method="POST" @submit.prevent="store">
                         <div class="form-group">
                             <label for="kategori"><p>Kategori Sampah</p></label>
-                            <select id="subject" class="form-control">
-                                <option placeholder="Kategori Sampah">
-                                    Kategori
+                            <select v-model="form.kategori_id" id="kategori" class="form-control">
+                                <!-- <option :value="null" disabled selected>Kategori</option> -->
+                                <option v-for="kategori in kategori_sampah" :key="kategori.id" :value="kategori.id"  placeholder="Kategori Sampah">
+                                    {{kategori.kategori_nama}}
                                 </option>
                             </select>
+                            <div v-if="theErrors.kategori_id" class="mt-2 text-danger">{{ theErrors.kategori_id[0]}}</div>
                         </div>
                         <div class="form-group">
                             <label for="nama"><p>Nama Sampah</p></label>
-                            <input type="text"  id="title" class="form-control" placeholder="Nama Sampah">
-                            <!-- <div v-if="theErrors.title" class="mt-2 text-danger">{{ theErrors.title[0]}}</div> -->
+                            <input v-model="form.nama"  type="text"  id="nama" class="form-control" placeholder="Nama Sampah">
+                            <div v-if="theErrors.nama" class="mt-2 text-danger">{{ theErrors.nama[0]}}</div>
                         </div>
                         <button type="submit" class="btn btn-block btn-primary shadow">Simpan</button>
                     </form>
-                    <router-link class="nav-link" exact :to="{name: 'home'}">Home</router-link>
+                    <!-- <router-link class="nav-link" exact :to="{name: 'home'}">Home</router-link> -->
                 </div>
             </div>
         </div>
@@ -31,7 +33,41 @@
 
 <script>
 export default {
+    data(){
+        return{
+            form: {
+                kategori_id: '',
+                nama: ''
+            },
+            kategori_sampah: [],
+            theErrors: [],
+        }
+    },
 
+    mounted(){
+        this.getKategori();
+    },
+
+    methods:{
+        async getKategori(){
+            let response = await axios.get('/api/kategori')
+            if (response.status === 200) {
+                this.kategori_sampah = response.data
+            }
+        },
+
+        async store(){
+            try {
+                let response = await axios.post('/api/sampah/new', this.form)
+                if (response.status == 200) {
+                    this.theErrors = []
+                    this.$router.push('/')
+                }
+            } catch (e) {
+                this.theErrors = e.response.data.errors;
+            }
+        }
+    }
 }
 </script>
 

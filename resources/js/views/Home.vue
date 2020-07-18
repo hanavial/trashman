@@ -12,7 +12,6 @@
                             <p class="name-title">{{sampah.nama}}</p>
                             <div class="row about">
                                 <p class="name-category">{{sampah.kategori_nama}}</p>
-                                <!-- <a class="nav-link pull-right delete" href="#">Hapus</a> -->
                                 <delete-sampah :endpoint="sampah.id"/>
                             </div>
                         </div>

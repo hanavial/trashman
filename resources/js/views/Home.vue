@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand mx-auto">Data Sampah</a>
         </nav>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-    .container{
+    .home{
         background-color: #EEEEEE;
     }
     .py-3{

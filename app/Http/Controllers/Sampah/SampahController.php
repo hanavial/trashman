@@ -22,6 +22,11 @@ class SampahController extends Controller
 
     public function store()
     {
+        request()->validate([
+            'kategori_id' => 'required',
+            'nama' => 'required|min:1',
+        ]);
+
         $kategori = KategoriSampah::findOrFail(request('kategori_id'));
 
         $sampah = Sampah::create([

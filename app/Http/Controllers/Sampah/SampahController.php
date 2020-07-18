@@ -32,7 +32,7 @@ class SampahController extends Controller
         return response()->json([
             'message' => 'Sampah baru telah ditambahkan',
             'status' => 200,
-            'sampah' => $sampah,
+            'data' => $sampah,
         ],200);
     }
 

@@ -7,25 +7,40 @@
             <div class="row">
                 <div class="col-md-12">
                     <router-link class="btn btn-block btn-primary py-2 mb-3 shadow" exact :to="{name: 'create'}">Tambah</router-link>
-                    <!-- <h1>Home</h1> -->
                     <div class="card mt-2">
                         <div class="card-body">
-                            <p>Kertas HVS</p>
+                            <p class="name-title">Kertas HVS</p>
+                            <div class="row about">
+                                <p class="name-category">Kertas</p>
+                                <a class="nav-link pull-right delete" href="#">Hapus</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card mt-2">
                         <div class="card-body">
-                            <p>Plastik PET</p>
+                            <p class="name-title">Plastik PET</p>
+                            <div class="row about">
+                                <p class="name-category">Kertas</p>
+                                <a class="nav-link pull-right delete" href="#">Hapus</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card mt-2">
                         <div class="card-body">
-                            <p>Plastik Kresek</p>
+                            <p class="name-title">Plastik Kresek</p>
+                            <div class="row about">
+                                <p class="name-category">Kertas</p>
+                                <a class="nav-link pull-right delete" href="#">Hapus</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card mt-2">
                         <div class="card-body">
-                            <p>Baja Ringan</p>
+                            <p class="name-title">Baja Ringan</p>
+                            <div class="row about">
+                                <p class="name-category">Kertas</p>
+                                <a class="nav-link pull-right delete" href="#">Hapus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,15 +60,22 @@ export default {
     .container{
         background-color: #EEEEEE;
     }
+    .py-3{
+        padding-bottom: 200px !important;
+    }
     .navbar a{
         font-weight: 200;
     }
     .bg-primary{
         background-color: #0C325F !important;
     }
-    .card-body{
+    .card{
         border: none;
-        border-radius: 100px;
+        border-radius: 7px;
+        box-shadow: 0 0.9rem 1rem rgba(168, 168, 168, 0.15) !important
+    }
+    .card-body{
+        padding: 0.7rem 0.9rem;
     }
     .btn{
         border-radius: 7px;
@@ -69,8 +91,28 @@ export default {
     .shadow{
         box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;
     }
-    /* #0C325F
-        #30AEE4
-        #EEEEEE
+    .name-title{
+        margin-bottom: 0.2rem;
+        font-size: 14px;
+    }
+    .name-category{
+        margin-bottom: 0;
+        color: #777777;
+    }
+    .nav-link{
+        padding: 0;
+        margin-left: auto;
+    }
+    .row .about{
+        margin: 2px 0;
+        font-size: 13px;
+    }
+    .delete{
+        color: #ff1717;
+    }
+    /*
+    #0C325F
+    #30AEE4
+    #EEEEEE
      */
 </style>

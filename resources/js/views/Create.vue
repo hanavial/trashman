@@ -10,7 +10,7 @@
                         <div class="form-group">
                             <label for="kategori"><p>Kategori Sampah</p></label>
                             <select v-model="form.kategori_id" id="kategori" class="form-control">
-                                <!-- <option :value="null" disabled selected>Kategori</option> -->
+                                <option value="kategori" disabled selected>Kategori</option>
                                 <option v-for="kategori in kategori_sampah" :key="kategori.id" :value="kategori.id"  placeholder="Kategori Sampah">
                                     {{kategori.kategori_nama}}
                                 </option>
@@ -36,7 +36,7 @@ export default {
     data(){
         return{
             form: {
-                kategori_id: '',
+                kategori_id: 'kategori',
                 nama: ''
             },
             kategori_sampah: [],

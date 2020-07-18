@@ -27,7 +27,6 @@ class SampahController extends Controller
         $sampah = Sampah::create([
             'kategori_id' => $kategori->id,
             'nama' => request('nama'),
-            'deskripsi' => request('deskripsi'),
         ]);
 
         return response()->json([

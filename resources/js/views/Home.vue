@@ -7,38 +7,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <router-link class="btn btn-block btn-primary py-2 mb-3 shadow" exact :to="{name: 'create'}">Tambah</router-link>
-                    <div class="card mt-2">
+                    <div class="card mt-2" v-for="sampah in sampahs" :key="sampah.id">
                         <div class="card-body">
-                            <p class="name-title">Kertas HVS</p>
+                            <p class="name-title">{{sampah.nama}}</p>
                             <div class="row about">
-                                <p class="name-category">Kertas</p>
-                                <a class="nav-link pull-right delete" href="#">Hapus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <p class="name-title">Plastik PET</p>
-                            <div class="row about">
-                                <p class="name-category">Kertas</p>
-                                <a class="nav-link pull-right delete" href="#">Hapus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <p class="name-title">Plastik Kresek</p>
-                            <div class="row about">
-                                <p class="name-category">Kertas</p>
-                                <a class="nav-link pull-right delete" href="#">Hapus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <p class="name-title">Baja Ringan</p>
-                            <div class="row about">
-                                <p class="name-category">Kertas</p>
+                                <p class="name-category">{{sampah.kategori_nama}}</p>
                                 <a class="nav-link pull-right delete" href="#">Hapus</a>
                             </div>
                         </div>
@@ -52,6 +25,20 @@
 <script>
 
 export default {
+    data(){
+        return{
+            sampahs:[],
+        }
+    },
+    mounted(){
+        this.getSampah();
+    },
+    methods:{
+        async getSampah(){
+            let {data} = await axios.get('/api/sampah');
+            this.sampahs = data.data
+        }
+    }
 
 }
 </script>

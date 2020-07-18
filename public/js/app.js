@@ -2035,7 +2035,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       form: {
-        kategori_id: '',
+        kategori_id: 'kategori',
         nama: ''
       },
       kategori_sampah: [],
@@ -39519,24 +39519,34 @@ var render = function() {
                       }
                     }
                   },
-                  _vm._l(_vm.kategori_sampah, function(kategori) {
-                    return _c(
+                  [
+                    _c(
                       "option",
                       {
-                        key: kategori.id,
-                        attrs: { placeholder: "Kategori Sampah" },
-                        domProps: { value: kategori.id }
+                        attrs: { value: "kategori", disabled: "", selected: "" }
                       },
-                      [
-                        _vm._v(
-                          "\n                                " +
-                            _vm._s(kategori.kategori_nama) +
-                            "\n                            "
-                        )
-                      ]
-                    )
-                  }),
-                  0
+                      [_vm._v("Kategori")]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.kategori_sampah, function(kategori) {
+                      return _c(
+                        "option",
+                        {
+                          key: kategori.id,
+                          attrs: { placeholder: "Kategori Sampah" },
+                          domProps: { value: kategori.id }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(kategori.kategori_nama) +
+                              "\n                            "
+                          )
+                        ]
+                      )
+                    })
+                  ],
+                  2
                 ),
                 _vm._v(" "),
                 _vm.theErrors.kategori_id

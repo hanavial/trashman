@@ -80,6 +80,8 @@ export default {
     }
     .btn{
         border-radius: 7px;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
     }
     .btn-primary{
         background-color: #30AEE4;

@@ -80,8 +80,8 @@ export default {
     }
     .btn{
         border-radius: 7px;
-        padding-top: 0.8rem !important;
-        padding-bottom: 0.8rem !important;
+        padding-top: 0.7rem !important;
+        padding-bottom: 0.7rem !important;
     }
     .btn-primary{
         background-color: #30AEE4;
@@ -94,8 +94,13 @@ export default {
     .shadow{
         box-shadow: 0 0.9rem 1rem rgb(48, 174, 228, 0.15) !important;
     }
+    .form-control{
+        height: calc(1.6em + 0.75rem + 10px);
+    }
     input, select{
         border-radius: 7px;
+        padding-top: 0.7rem !important;
+        padding-bottom: 0.7rem !important;
     }
     label{
         margin-bottom: 1px;

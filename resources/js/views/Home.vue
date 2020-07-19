@@ -56,8 +56,8 @@ export default {
         padding-bottom: 800px !important;
     }
     .py-2{
-        padding-top: 0.8rem !important;
-        padding-bottom: 0.8rem !important;
+        padding-top: 0.7rem !important;
+        padding-bottom: 0.7rem !important;
     }
     .navbar a{
         font-weight: 200;

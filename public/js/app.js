@@ -2035,7 +2035,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       form: {
-        kategori_id: 'kategori',
+        kategori_id: '',
         nama: ''
       },
       kategori_sampah: [],
@@ -39521,9 +39521,7 @@ var render = function() {
                   [
                     _c(
                       "option",
-                      {
-                        attrs: { value: "kategori", disabled: "", selected: "" }
-                      },
+                      { attrs: { value: "", disabled: "", selected: "" } },
                       [_vm._v("Kategori")]
                     ),
                     _vm._v(" "),

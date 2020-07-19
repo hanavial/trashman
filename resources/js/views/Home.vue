@@ -53,7 +53,7 @@ export default {
         background-color: #EEEEEE;
     }
     .py-3{
-        padding-bottom: 200px !important;
+        padding-bottom: 600px !important;
     }
     .navbar a{
         font-weight: 200;
